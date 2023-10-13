@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useCreateTask } from "./reactQueryCustomHooks";
+import { TbCapsuleFilled } from "react-icons/tb";
 
 const Form = () => {
   const [newItemName, setNewItemName] = useState("");
@@ -18,6 +19,7 @@ const Form = () => {
   return (
     <form onSubmit={handleSubmit}>
       <h4>task bud</h4>
+      <TbCapsuleFilled className="capsule" size={32} fill="red" height={96} />
       <div className="form-control">
         <input
           type="text "
